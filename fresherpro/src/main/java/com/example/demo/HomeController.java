@@ -22,21 +22,14 @@ public class HomeController {
 		String name= req.getParameter("username");
 		String pass= req.getParameter("password");
 		String f="fresherpro";
-		int flag=0;
+		
 		if(f.equals(name)&&f.equals(pass)) {
-			System.out.println(name);
-			System.out.println(pass);
-			System.out.println("correct");
-			flag=1;
+			
 			return "welcome";
 			
 		}
 		else {
-			flag=2;
-			System.out.println(flag);
-			System.out.println(name);
-			System.out.println(pass);
-			System.out.println("wrong");
+			
 			return "erro";
 		}
 	}catch(Exception e) {
